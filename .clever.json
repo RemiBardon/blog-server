@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "app_id": "app_3a84bcf6-efe1-4eb3-9e1e-fa3be6bc48b4",
+      "org_id": "user_ad545e44-b46f-4eab-8e48-34c3dfcd31bd",
+      "deploy_url": "https://github.com/RemiBardon/blog-server.git",
+      "name": "blog-server",
+      "alias": "blog-server"
+    }
+  ]
+}
