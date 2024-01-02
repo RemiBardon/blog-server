@@ -1,3 +1,3 @@
 [submodule "orangutan"]
 	path = orangutan
-	url = https://github.com/RemiBardon/Orangutan.git
+	url = git@github.com:RemiBardon/Orangutan.git
