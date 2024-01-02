@@ -1,0 +1,9 @@
+[default]
+port = 8080
+log_level = "normal"
+
+[release]
+address = "0.0.0.0"
+
+[debug]
+# log_level = "debug"
