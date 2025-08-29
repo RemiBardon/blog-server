@@ -5,6 +5,9 @@ version: "3"
 silent: true
 
 tasks:
+  update:
+    cmd: ./scripts/update.sh
+
   test:
     desc: Tests that the server builds.
     cmds:
