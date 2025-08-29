@@ -20,5 +20,16 @@ tasks:
     dotenv: [.env]
     env:
       LOCALHOST: true
-      RUST_LOG: orangutan_server=debug,orangutan_helpers::generate=debug
+      RUST_LOG: info,orangutan_server=trace,orangutan_helpers::generate=debug,hyper=info
     cmd: orangutan-server
+
+  local:build:
+    internal: true
+    dotenv: [.env]
+    cmd: cargo install --path "${ORANGUTAN_REPOSITORY:?}"/src/orangutan-server
+
+  local:test:
+    desc: Tests that the server builds with unreleased server.
+    cmds:
+      - task: local:build
+      - task: run
